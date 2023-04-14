@@ -1,6 +1,7 @@
+import Image from 'next/image';
 
 const ProfilePhoto = () => {
-  return <div>2</div>;
+  return <Image src="/img/profile.png" alt="profile" width="400" height="400" />;
 };
 
 export default ProfilePhoto;

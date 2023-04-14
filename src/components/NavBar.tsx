@@ -1,32 +1,76 @@
+import Link from 'next/link';
+import classNames from 'classnames';
+import { useRouter } from 'next/router';
 import { Button } from '@/components/Button';
 
-const navLinkClass = `
-text-neutral-800
-hover:cursor-pointer
-relative
-after:absolute
-after:content-['']
-after:bg-neutral-800
-after:h-[2px]
-after:w-[0px]
-after:left-0
-after:-bottom-[5px]
-after:rounded-xl
-after:duration-300
-after:hover:w-full
-`;
+const LINKS = [
+  {
+    label: 'Home',
+    path: '/',
+  },
+  {
+    label: 'About Me',
+    path: '/about',
+  },
+  {
+    label: 'Certifications',
+    path: '/certifications',
+  },
+  {
+    label: 'Portfolio',
+    path: '/portfolio',
+  },
+];
 
 const NavBar = () => {
-  return (
-    <nav className="h-16 px-14 py-3 flex justify-between items-center text-base font-medium">
-      <ul className="flex items-center gap-20">
-        <a className={`${navLinkClass}`}>Home</a>
-        <a className={`${navLinkClass}`}>About me</a>
-        <a className={`${navLinkClass}`}>Certifications</a>
-        <a className={`${navLinkClass}`}>Portfolio</a>
-      </ul>
+  const router = useRouter();
 
-      <Button />
+  return (
+    <nav>
+      <div className="container mx-auto px-4 sm:px-6 md:px-10">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="min-w-max">
+              <h1 className="text-gray-700 font-bold text-2xl">
+                <span>{'< R'}</span>
+                <span className="text-red-600">{'J '}</span>
+                <span>{'/>'}</span>
+              </h1>
+            </div>
+            <div className="hidden md:block">
+              <ul className="text-base font-medium flex items-center gap-20 ml-14">
+                {LINKS.map(({ label, path }) => (
+                  <Link
+                    key={path}
+                    href={path}
+                    className={classNames(
+                      `text-neutral-800
+                    hover:cursor-pointer
+                    relative
+                    after:absolute
+                    after:content-['']
+                    after:bg-neutral-800
+                    after:h-[2px]
+                    after:w-[0px]
+                    after:left-0
+                    after:-bottom-[5px]
+                    after:rounded-xl
+                    after:duration-300
+                    after:hover:w-full`,
+                      { '!text-red-600': router.pathname === path }
+                    )}
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <Button />
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
