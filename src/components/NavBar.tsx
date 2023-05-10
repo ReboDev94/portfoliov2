@@ -17,6 +17,10 @@ const LINKS = [
     path: '/certifications',
   },
   {
+    label: 'Skills',
+    path: '/skills',
+  },
+  {
     label: 'Portfolio',
     path: '/portfolio',
   },
