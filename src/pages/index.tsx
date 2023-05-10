@@ -3,11 +3,9 @@ import ProfilePhoto from '@/components/ProfilePhoto';
 import ContactInformation from '@/components/ContactInformation';
 import SocialMedia from '@/components/SocialMedia';
 
-// import NavBar from '@/components/NavBar';
-
 export default function Home() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto px-4 sm:px-6 md:px-10">
+    <section className="min-h-[calc(100vh-4rem)] flex flex-col">
       <div className="flex-1 grid grid-cols-2">
         <div className="font-semibold text-neutral-800 gap-5 flex flex-col justify-center">
           <span className="text-xl">Hi There,</span>

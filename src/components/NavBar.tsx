@@ -27,24 +27,23 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="container mx-auto px-4 sm:px-6 md:px-10">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="min-w-max">
-              <h1 className="text-gray-700 font-bold text-2xl">
-                <span>{'< R'}</span>
-                <span className="text-red-600">{'J '}</span>
-                <span>{'/>'}</span>
-              </h1>
-            </div>
-            <div className="hidden md:block">
-              <ul className="text-base font-medium flex items-center gap-20 ml-14">
-                {LINKS.map(({ label, path }) => (
-                  <Link
-                    key={path}
-                    href={path}
-                    className={classNames(
-                      `text-neutral-800
+      <div className="flex items-center justify-between h-16">
+        <div className="flex items-center">
+          <div className="min-w-max">
+            <h1 className="text-gray-700 font-bold text-2xl">
+              <span>{'< R'}</span>
+              <span className="text-red-600">{'J '}</span>
+              <span>{'/>'}</span>
+            </h1>
+          </div>
+          <div className="hidden md:block">
+            <ul className="text-base font-medium flex items-center gap-20 ml-14">
+              {LINKS.map(({ label, path }) => (
+                <Link
+                  key={path}
+                  href={path}
+                  className={classNames(
+                    `text-neutral-800
                     hover:cursor-pointer
                     relative
                     after:absolute
@@ -57,18 +56,17 @@ const NavBar = () => {
                     after:rounded-xl
                     after:duration-300
                     after:hover:w-full`,
-                      { '!text-red-600': router.pathname === path }
-                    )}
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </ul>
-            </div>
+                    { '!text-red-600': router.pathname === path }
+                  )}
+                >
+                  {label}
+                </Link>
+              ))}
+            </ul>
           </div>
-          <div className="hidden md:block">
-            <Button />
-          </div>
+        </div>
+        <div className="hidden md:block">
+          <Button />
         </div>
       </div>
     </nav>

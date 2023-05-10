@@ -1,0 +1,25 @@
+{
+    "udemy": [
+        {
+            "title": "Nest: Desarrollo backend escalable con Node.",
+            "src": "/img/certificates/udemy/nest.jpg"
+        },
+        {
+            "title": "TypeScript: Tu completa guía y manual de mano.",
+            "src": "/img/certificates/udemy/typescript.jpg"
+        },
+        {
+            "title": "ReactJs de cero a experto.",
+            "src": "/img/certificates/udemy/react.jpg"
+        },
+        {
+            "title": "Angular de cero a experto",
+            "src": "/img/certificates/udemy/angular.jpg"
+        },
+        {
+            "title": "Node: De cero a experto",
+            "src": "/img/certificates/udemy/node.jpg"
+        }
+    ],
+    "devTalles": []
+}
