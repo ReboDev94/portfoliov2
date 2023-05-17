@@ -1,11 +1,11 @@
 import { Typewriter } from 'react-simple-typewriter';
 import ProfilePhoto from '@/components/ProfilePhoto';
 import ContactInformation from '@/components/ContactInformation';
-import SocialMedia from '@/components/SocialMedia';
+import { Button } from '../components/Button';
 
 export default function Home() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col">
+    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto md:px-20">
       <div className="flex-1 grid grid-cols-2">
         <div className="font-semibold text-neutral-800 gap-5 flex flex-col justify-center">
           <span className="text-xl">Hi There,</span>
@@ -23,14 +23,14 @@ export default function Home() {
               words={['Software engineer', 'Full Stack Developer']}
             />
           </h4>
-          <SocialMedia className='flex gap-5'/>
+          <div className='flex gap-2'>
+            <Button>Hire me</Button>
+            <Button>Resume</Button>
+          </div>
         </div>
         <div className="grid place-content-center">
           <ProfilePhoto />
         </div>
-      </div>
-      <div className="h-24">
-        <ContactInformation />
       </div>
     </section>
   );

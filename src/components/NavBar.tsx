@@ -66,7 +66,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <Button>Contact Me</Button>
+          <Button onClick={()=>router.push('/contact')}>Contact Me</Button>
         </div>
       </div>
     </nav>
