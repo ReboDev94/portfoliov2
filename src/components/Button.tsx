@@ -15,12 +15,12 @@ const TYPE_BTNS = {
   'outline-danger': OUTLINE_DANGER_CLASSES,
 };
 
-export const Button = ({ variant = 'outline-danger', ...props }: Props) => {
+export const Button = ({ variant = 'outline-danger', children, ...props }: Props) => {
   const computedClass = useMemo(() => TYPE_BTNS[variant], [variant]);
 
   return (
     <button className={`${BASE_BUTTON_CLASSES} ${computedClass}`} {...props}>
-      Contact Me
+      {children}
     </button>
   );
 };

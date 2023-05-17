@@ -17,10 +17,6 @@ const LINKS = [
     path: '/certifications',
   },
   {
-    label: 'Skills',
-    path: '/skills',
-  },
-  {
     label: 'Portfolio',
     path: '/portfolio',
   },
@@ -70,7 +66,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <Button />
+          <Button>Contact Me</Button>
         </div>
       </div>
     </nav>

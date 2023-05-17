@@ -12,6 +12,8 @@ const about = () => {
             src="/img/about-me.jpg"
             alt="about-me"
             fill
+            sizes='100%'
+            priority
             className="rounded-md h-full w-full object-cover"
           />
         </div>

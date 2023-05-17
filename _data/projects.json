@@ -1,0 +1,31 @@
+[
+    {
+        "title": "My Portfolio",
+        "description": "Mi portafolio es mi pagina personal, en la cual pude practicar algunas de las cosas que he aprendido de NextJs 13.",
+        "skills": [
+            "NextJs",
+            "React",
+            "TypeScript",
+            "TailwindCss",
+            "GitHub"
+        ],
+        "image": "portfolio.png",
+        "web": "https://rafael-de-jesus.com",
+        "repo": "https://github.com/ReboDev94/portfoliov2"
+    },
+    {
+        "title": "PrestamosRRR",
+        "description": "PrestamosRRR es un proyecto que desarrolle para llevar el control de los prestamos personales, me sirvio mucho para organizar los dias de pago y abonos.",
+        "skills": [
+            "Vue",
+            "TypeScript",
+            "TailwindCss",
+            "PHP V8",
+            "Laravel",
+            "Git"
+        ],
+        "image": "prestamosrrr.png",
+        "web": "https://prestamosrrr.com",
+        "repo": "https://github.com/ReboDev94/prestamos-frontend"
+    }
+]

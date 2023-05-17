@@ -22,7 +22,13 @@ const certifications = ({ allCertificates }: Props) => {
               <div className="w-1/4 p-2" key={uuidv4()}>
                 <div className="bg-white rounded-md border shadow-md border-neutral-200 hover:border-red-600 hover:shadow-red-200">
                   <div className="relative w-full h-60">
-                    <Image src={src} alt="certificate-" fill className="rounded-t-md" />
+                    <Image
+                      src={src}
+                      alt={`certificate - ${title}`}
+                      fill
+                      sizes='100%'
+                      priority
+                      className="rounded-t-md" />
                   </div>
                   <div className="p-4">
                     <h4 className="font-semibold line-clamp-2 h-12">{title}</h4>
