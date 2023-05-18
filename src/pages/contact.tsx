@@ -1,16 +1,22 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, FormEvent, useState } from 'react'
 import { Button } from '../components/Button';
 
 import SocialMedia from '@/components/SocialMedia';
 import ContactInformation from '@/components/ContactInformation';
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const initData = {
   name: '',
   email: '',
   message: '',
 };
+const notifySuccess = () => toast('Here is your toast.');
+
 const Contact = () => {
 
+  const [loading, setLoading] = useState(false);
   const [{ name, email, message }, setFormContact] = useState(initData);
 
   const onInputChange = (
@@ -18,6 +24,27 @@ const Contact = () => {
   ) => {
     const { name, value } = e.target;
     setFormContact((prev) => ({ ...prev, [name]: value }));
+  };
+
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    axios({
+      method: 'POST',
+      url: 'https://formbold.com/s/6QO53',
+      data: { name, email, message },
+    })
+      .then(() => {
+        toast.success('He recibido tu mensaje, muy pronto me pondré en contacto contigo, gracias.');
+        setFormContact(initData);
+      })
+      .catch(() => {
+        toast.error('Ocurrió un error, por favor inténtalo mas tarde.');
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   return (
@@ -34,7 +61,7 @@ const Contact = () => {
             <ContactInformation />
           </div>
           <div>
-            <form className='flex flex-col gap-4'>
+            <form className='flex flex-col gap-4' onSubmit={sendEmail}>
               <input
                 type="text"
                 name="name"
@@ -46,7 +73,7 @@ const Contact = () => {
               />
 
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Email"
                 value={email}
@@ -64,14 +91,14 @@ const Contact = () => {
                 required
               />
               <div className='flex justify-end'>
-                <Button>Send</Button>
+                <Button type='submit' disabled={loading}>Send</Button>
               </div>
             </form>
           </div>
         </div>
         <SocialMedia className='flex gap-5' />
       </div>
-
+      <Toaster />
     </section>
   )
 }
