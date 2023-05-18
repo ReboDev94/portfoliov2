@@ -13,7 +13,9 @@ const Layout = ({ children }: LayoutProps) => {
         <title>ReboDev</title>
         <meta name="description" content="Personal web site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link type="image/x-icon" rel="icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+
       </Head>
       <NavBar />
       <main className="container mx-auto px-6 md:px-10">

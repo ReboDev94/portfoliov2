@@ -33,7 +33,7 @@ const NavBar = () => {
     <nav className='px-4 sm:px-6 md:px-10 relative'>
       <div className='h-16 flex items-center justify-between'>
         <div className="min-w-max">
-          <h1 className="text-gray-700 font-bold text-2xl">
+          <h1 className="text-neutral-800 font-bold text-2xl">
             <span>{'< R'}</span>
             <span className="text-red-600">{'J '}</span>
             <span>{'/>'}</span>
