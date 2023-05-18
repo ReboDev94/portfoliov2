@@ -9,7 +9,7 @@ const initData = {
   email: '',
   message: '',
 };
-const contact = () => {
+const Contact = () => {
 
   const [{ name, email, message }, setFormContact] = useState(initData);
 
@@ -76,4 +76,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

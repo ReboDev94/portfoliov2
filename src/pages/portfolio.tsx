@@ -12,7 +12,7 @@ import { getAllProjects } from './api/data';
 type Props = {
   projects: Projects[]
 }
-const portfolio = ({ projects = [] }: Props) => {
+const Portfolio = ({ projects = [] }: Props) => {
 
   const router = useRouter();
 
@@ -71,7 +71,7 @@ const portfolio = ({ projects = [] }: Props) => {
   );
 };
 
-export default portfolio;
+export default Portfolio;
 export const getStaticProps = async () => {
   const projects = await getAllProjects();
 
