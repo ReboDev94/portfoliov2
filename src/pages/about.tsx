@@ -5,9 +5,9 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const about = () => {
   return (
-    <section className="min-h-[calc(100vh-4rem)] grid place-content-center">
-      <div className="grid grid-cols-2 gap-10 p-6">
-        <div className="flex flex-col relative">
+    <section className="min-h-[calc(100vh-4rem)] md:grid md:place-content-center my-10 md:my-0">
+      <div className="gap-10 flex flex-col md:grid md:grid-cols-2">
+        <div className="flex flex-col relative h-28 md:h-full">
           <Image
             src="/img/about-me.jpg"
             alt="about-me"

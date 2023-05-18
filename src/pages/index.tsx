@@ -1,13 +1,12 @@
+import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
-import ProfilePhoto from '@/components/ProfilePhoto';
-import ContactInformation from '@/components/ContactInformation';
 import { Button } from '../components/Button';
 
 export default function Home() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto md:px-20">
-      <div className="flex-1 grid grid-cols-2">
-        <div className="font-semibold text-neutral-800 gap-5 flex flex-col justify-center">
+    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto lg:px-20 my-10 md:my-0">
+      <div className="flex-1 grid grid-cols-2 gap-10 md:gap-0 ">
+        <div className="font-semibold text-neutral-800 gap-5 flex flex-col justify-center col-span-2 md:col-span-1 order-2 md:order-1">
           <span className="text-xl">Hi There,</span>
           <h1 className="text-6xl font-bold tracking-tight">
             I´m Rafael de <span className="text-red-600">J</span>esús
@@ -28,8 +27,10 @@ export default function Home() {
             <Button>Resume</Button>
           </div>
         </div>
-        <div className="grid place-content-center">
-          <ProfilePhoto />
+        <div className="grid place-content-center col-span-2 md:col-span-1 md:order-2 relative">
+          <div className='w-[310px] h-[310px] lg:h-[400px] lg:w-[380px] relative'>
+            <Image src="/img/profile.png" alt="profile" fill priority />
+          </div>
         </div>
       </div>
     </section>

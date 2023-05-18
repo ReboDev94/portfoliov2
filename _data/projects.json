@@ -4,14 +4,15 @@
         "description": "Ballet Studio es un sistema de gestión de alumnos, colegiaturas y ventas de articulos.",
         "skills": [
             "React",
-            "TypeScript",
+            "NestJs",
             "TailwindCss",
-            "PHP V8",
-            "Laravel v10",
+            "TypeScript",
+            "PostgreSQL",
+            "AWS",
             "React Hook Form",
             "React Router dom v6",
             "Redux Toolkit",
-            "Git"
+            "GitHub"
         ],
         "image": "ballet.png",
         "web": "https://ballet-studio.com",
@@ -22,7 +23,6 @@
         "description": "Mi portafolio es mi pagina personal, en la cual pude practicar algunas de las cosas que he aprendido de NextJs 13.",
         "skills": [
             "NextJs",
-            "React",
             "TypeScript",
             "TailwindCss",
             "GitHub"
@@ -36,14 +36,16 @@
         "description": "PrestamosRRR es un proyecto que desarrolle para llevar el control de los prestamos personales, me sirvio mucho para organizar los dias de pago y abonos.",
         "skills": [
             "Vue",
-            "TypeScript",
-            "TailwindCss",
-            "PHP V8",
             "Laravel",
+            "TailwindCss",
+            "TypeScript",
+            "PHP V8",
+            "MySQL",
+            "AWS",
             "Composition API",
             "Pinia",
             "Vue Router",
-            "Git"
+            "GitHub"
         ],
         "image": "prestamosrrr.png",
         "web": "https://prestamosrrr.com",
@@ -56,7 +58,7 @@
             "React",
             "TypeScript",
             "TailwindCss",
-            "Git"
+            "GitHub"
         ],
         "image": "portfoliov1.png",
         "web": "https://rafael-de-jesus.com",

@@ -28,7 +28,7 @@ const contact = () => {
         </h1>
       </div>
       <div className='md:mx-36'>
-        <div className='grid grid-cols-2 mb-4 py-4 border-b border-red-600'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 mb-4 py-4 border-b border-gray-300'>
           <div className='flex flex-col gap-6'>
             <h1 className="text-xl font-semibold text-red-600">Drop Me a Message</h1>
             <ContactInformation />
