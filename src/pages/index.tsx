@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid place-content-center col-span-2 md:col-span-1 md:order-2 relative">
-          <div className='w-[290px] h-[310px] lg:h-[400px] lg:w-[380px] relative'>
+          <div className='w-[300px] h-[300px] lg:h-[400px] lg:w-[420px] relative'>
             <Image src="/img/profile.png" alt="profile" fill priority />
           </div>
         </div>

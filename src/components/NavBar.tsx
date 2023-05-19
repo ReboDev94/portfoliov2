@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import { Button } from '@/components/Button';
-import { useTheme } from 'next-themes';
-import { faBars, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const LINKS = [
   {
@@ -29,9 +28,7 @@ const LINKS = [
 const NavBar = () => {
   const router = useRouter();
   const [menuNavbar, setMenuNavbar] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme();
 
-  const currentTheme = theme === 'system' ? systemTheme : theme;
 
   useEffect(() => {
     router.events.on('routeChangeComplete', (url) => {
