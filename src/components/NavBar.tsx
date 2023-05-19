@@ -40,13 +40,13 @@ const NavBar = () => {
   return (
     <nav className='px-4 sm:px-6 md:px-10 relative bg-light'>
       <div className='h-16 flex items-center justify-between'>
-        <div className="min-w-max">
+        <Link href="/" className="min-w-max">
           <h1 className="font-bold text-2xl">
             <span>{'< R'}</span>
             <span className="text-light-black/70">{'J '}</span>
             <span>{'/>'}</span>
           </h1>
-        </div>
+        </Link>
         <div className={classNames(`
               flex-1
               flex
