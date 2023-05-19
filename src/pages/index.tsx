@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 import { Button } from '../components/Button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,12 +24,15 @@ export default function Home() {
             />
           </h4>
           <div className='flex gap-2'>
-            <Button>Hire me</Button>
-            <Button>Resume</Button>
+            <Link href="/CV/CV-RAFAEL_DE_JESUS_REBOLLEDO_HDZ_WEB_FULLSTACK.pdf" passHref legacyBehavior >
+              <a target="_blank" rel="noreferrer">
+                <Button>Download Resume</Button>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="grid place-content-center col-span-2 md:col-span-1 md:order-2 relative">
-          <div className='w-[310px] h-[310px] lg:h-[400px] lg:w-[380px] relative'>
+          <div className='w-[290px] h-[310px] lg:h-[400px] lg:w-[380px] relative'>
             <Image src="/img/profile.png" alt="profile" fill priority />
           </div>
         </div>

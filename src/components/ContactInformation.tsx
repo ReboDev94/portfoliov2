@@ -26,22 +26,7 @@ const contactInformation: IContactInformation[] = [
     value: 'Chilpancingo de los bravos, Gro, Mex',
   },
 ];
-/*
-<div
-  key={uuidv4()}
-  className="text-neutral-800 flex flex-col gap-2 first-of-type:pl-0 px-10 border-r-2 border-r-gray-500"
->
-  <span className="font-semibold text-lg">{label}:</span>
-  {link ? (
-    <Link href={link} passHref legacyBehavior className="cursor-pointer font-normal select-text">
-      <a target="_blank" rel="noreferrer">
-        {value}
-      </a>
-    </Link>
-  ) : (
-    <span className="font-normal select-text">{value}</span>
-  )}
-</div> */
+
 
 const ContactInformation = () => {
   return (

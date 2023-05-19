@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 import { v4 as uuidv4 } from 'uuid';
 import { Button } from '../components/Button';
-import Link from 'next/link';
 import { Projects } from '@/interfaces/projects';
 import { getAllProjects } from './api/data';
 
@@ -14,7 +13,6 @@ type Props = {
 }
 const Portfolio = ({ projects = [] }: Props) => {
 
-  const router = useRouter();
 
   return (
     <section className="flex flex-col container mx-auto px-4 sm:px-6 md:px-10">
@@ -47,7 +45,11 @@ const Portfolio = ({ projects = [] }: Props) => {
                   </ul>
                 </div>
                 <div className='mt-4'>
-                  <Button onClick={() => router.push(repo)}>Go to Repo</Button>
+                  <Link href={repo} passHref legacyBehavior >
+                    <a target="_blank" rel="noreferrer">
+                      <Button>Go to Repo</Button>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

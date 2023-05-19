@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 import { Button } from '@/components/Button';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const LINKS = [
   {
@@ -27,7 +27,14 @@ const LINKS = [
 
 const NavBar = () => {
   const router = useRouter();
-  const [menuNavbar, setMenuNavbar] = useState(false)
+  const [menuNavbar, setMenuNavbar] = useState(false);
+
+  useEffect(() => {
+    router.events.on('routeChangeComplete', (url) => {
+      setMenuNavbar(false);
+    });
+  }, [router.events])
+
 
   return (
     <nav className='px-4 sm:px-6 md:px-10 relative'>
@@ -64,7 +71,7 @@ const NavBar = () => {
               md:flex-row
               md:items-center
               md:p-0`, {
-              'hidden md:flex': !menuNavbar
+          'hidden md:flex': !menuNavbar
         })}
         >
           <ul className="text-base font-medium flex gap-4  flex-col md:flex-row md:ml-14 md:items-center md:gap-10">
