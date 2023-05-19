@@ -51,13 +51,13 @@ const Contact = () => {
     <section className="flex flex-col container mx-auto px-4 sm:px-6 md:px-10 gap-10">
       <div className='mt-10'>
         <h1 className="text-3xl font-semibold text-center">
-          <span className="text-red-600">C</span>ontact Me
+          <span className="text-light-black/70">C</span>ontact Me
         </h1>
       </div>
       <div className='md:mx-36'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 mb-4 py-4 border-b border-gray-300'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 mb-4 py-4 border-b border-light-black/30'>
           <div className='flex flex-col gap-6'>
-            <h1 className="text-xl font-semibold text-red-600">Drop Me a Message</h1>
+            <h1 className="text-xl font-semibold">Drop Me a Message</h1>
             <ContactInformation />
           </div>
           <div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => onInputChange(e)}
-                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-gray-500 text-sm text-neutral-800 focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-red-600"
+                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-light-black/70 text-sm  focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-light-black"
                 required
               />
 
@@ -78,7 +78,7 @@ const Contact = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => onInputChange(e)}
-                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-gray-500 text-sm text-neutral-800 focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-red-600"
+                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-light-black/70 text-sm  focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-light-black"
                 required
               />
               <textarea
@@ -87,7 +87,7 @@ const Contact = () => {
                 name="message"
                 placeholder="Message"
                 rows={4}
-                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-gray-500 text-sm text-neutral-800 focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-red-600"
+                className="block w-full p-2.5 shadow-sm rounded-lg border border-solid border-light-black/70 text-sm  focus:outline-none focus:border-none focus:ring-1 focus:ring-offset-0 focus:ring-light-black"
                 required
               />
               <div className='flex justify-end'>

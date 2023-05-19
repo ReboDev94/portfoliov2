@@ -5,8 +5,8 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const about = () => {
   return (
-    <section className="min-h-[calc(100vh-4rem)] md:grid md:place-content-center my-10 md:my-0">
-      <div className="gap-10 flex flex-col md:grid md:grid-cols-2">
+    <section className="min-h-[calc(100vh-4rem)] md:grid md:place-content-center">
+      <div className="gap-10 flex flex-col md:grid md:grid-cols-2 py-10 md:py-0">
         <div className="flex flex-col relative h-28 md:h-full">
           <Image
             src="/img/about-me.jpg"
@@ -17,9 +17,9 @@ const about = () => {
             className="rounded-md h-full w-full object-cover"
           />
         </div>
-        <div className="flex flex-col gap-8 text-neutral-800">
+        <div className="flex flex-col gap-8 ">
           <h1 className="text-3xl font-semibold">
-            <span className="text-red-600">A</span>bout Me
+            <span className="text-light-black/70">A</span>bout Me
           </h1>
           <p>
             Soy un profesional en desarrollo web full-stack con 4 años de experiencia, con especialización en

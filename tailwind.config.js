@@ -8,10 +8,15 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
+      },
+      colors: {
+        light: '#EDF1FD',
+        'light-black': '#3E4356',
       },
     },
   },

@@ -35,7 +35,7 @@ const ContactInformation = () => {
         <div key={uuidv4()} className='flex items-center gap-4'>
           <FontAwesomeIcon
             icon={icon}
-            className="text-neutral-800 hover:cursor-pointer"
+            className="hover:cursor-pointer"
             style={{ fontSize: 25 }}
           />
           {link ? (

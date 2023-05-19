@@ -13,7 +13,7 @@ interface Props
 // flex items - center
 const BASE_BUTTON_CLASSES = 'rounded-md focus:ring-2 focus:outline-none px-4 h-9 text-sm';
 const BLOCK_BUTTON = 'w-full';
-const OUTLINE_DANGER_CLASSES = 'focus:ring-red-300  text-red-600 border border-red-600';
+const OUTLINE_DANGER_CLASSES = 'focus:ring-light-black/70  border border-light-black/70 bg-light-black text-light';
 const TYPE_BTNS = {
   'outline-danger': OUTLINE_DANGER_CLASSES,
 };
