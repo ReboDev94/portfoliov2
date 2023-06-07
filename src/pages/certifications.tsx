@@ -10,7 +10,7 @@ type Props = {
 
 const certifications = ({ allCertificates }: Props) => {
   return (
-    <section className="flex flex-col container mx-auto px-4 sm:px-6 md:px-10">
+    <section className="flex flex-col container mx-auto px-4 sm:px-6">
       <div className='py-10'>
         <h1 className="text-3xl font-semibold">
           <span className="text-light-black/70">C</span>ertifications
@@ -18,7 +18,7 @@ const certifications = ({ allCertificates }: Props) => {
         <div className="mt-10">
           <div className="flex flex-wrap -mx-2">
             {allCertificates.map(({ title, src }) => (
-              <div className="w-full md:w-1/2 lg:w-1/4 p-2" key={uuidv4()}>
+              <div className="w-full md:w-1/2 lg:w-1/3 p-2" key={uuidv4()}>
                 <div className="bg-light rounded-md shadow-md border border-light-black/20 hover:border-light-black hover:shadow-light-black/20">
                   <div className="relative w-full h-60">
                     <Image

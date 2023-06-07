@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto lg:px-20">
+    <section className="min-h-[calc(100vh-4rem)] flex flex-col container mx-auto">
       <div className="flex-1 grid grid-cols-2 gap-10 md:gap-0 my-10 md:my-0">
         <div className="font-semibold  gap-5 flex flex-col justify-center col-span-2 md:col-span-1 order-2 md:order-1">
           <span className="text-xl">Hi There,</span>

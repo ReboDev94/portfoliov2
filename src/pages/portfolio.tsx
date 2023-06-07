@@ -15,7 +15,7 @@ const Portfolio = ({ projects = [] }: Props) => {
 
 
   return (
-    <section className="flex flex-col container mx-auto px-4 sm:px-6 md:px-10">
+    <section className="flex flex-col container mx-auto px-4 sm:px-6">
       <div className="mt-10">
         <h1 className="text-3xl font-semibold">
           <span className="text-light-black/70">P</span>ortfolio
