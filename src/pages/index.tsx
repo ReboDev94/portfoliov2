@@ -20,7 +20,7 @@ export default function Home() {
               cursor
               cursorColor="gray"
               loop
-              words={['Software engineer', 'Full Stack Developer']}
+              words={['Software engineer', 'Web Full Stack Developer']}
             />
           </h4>
           <div className='flex gap-2'>
