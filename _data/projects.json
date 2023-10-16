@@ -1,6 +1,21 @@
 [
     {
-        "title": "Ballet Studio - building",
+        "title": "Mogin Chilpancingo",
+        "description": "Mogin Chilpancingo es un ecommerce para hacer pedidos de bebidas exoticas.",
+        "skills": [
+            "Vue 3",
+            "Nuxt 3",
+            "TailwindCss",
+            "TypeScript",
+            "Composition API",
+            "GitHub"
+        ],
+        "image": "mogin.png",
+        "web": "https://e-commerce-mogin.vercel.app/",
+        "repo": "https://github.com/ReboDev94/e-commerce-mogin"
+    },
+    {
+        "title": "Ballet Studio",
         "description": "Ballet Studio es un sistema de gestión de alumnos, colegiaturas y ventas de articulos.",
         "skills": [
             "React",
@@ -61,7 +76,7 @@
             "GitHub"
         ],
         "image": "portfoliov1.png",
-        "web": "https://rafael-de-jesus.com",
+        "web": "https://portafolio-rust-five.vercel.app/",
         "repo": "https://github.com/ReboDev94/portafolio"
     }
 ]
