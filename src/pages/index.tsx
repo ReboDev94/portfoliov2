@@ -23,8 +23,12 @@ export default function Home() {
               words={['Software engineer', 'Web Full Stack Developer']}
             />
           </h4>
-          <div className='flex gap-2'>
-            <Link href="/CV/CV-RAFAEL_DE_JESUS_REBOLLEDO_HDZ_WEB_FULLSTACK.pdf" passHref legacyBehavior >
+          <div className="flex gap-2">
+            <Link
+              href="https://rjrh.s3.us-west-1.amazonaws.com/CV_RAFAEL_DE_JESUS_REBOLLEDO_HERNANDEZ.pdf"
+              passHref
+              legacyBehavior
+            >
               <a target="_blank" rel="noreferrer">
                 <Button>Download Resume</Button>
               </a>
@@ -32,7 +36,7 @@ export default function Home() {
           </div>
         </div>
         <div className="grid place-content-center col-span-2 md:col-span-1 md:order-2 relative">
-          <div className='w-[300px] h-[300px] lg:h-[400px] lg:w-[420px] relative'>
+          <div className="w-[300px] h-[300px] lg:h-[400px] lg:w-[420px] relative">
             <Image src="/img/profile.png" alt="profile" fill priority />
           </div>
         </div>
